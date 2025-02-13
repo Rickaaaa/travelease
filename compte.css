@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#compte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffefd5;
+}
+
+.container {
+    background: #fff8dc;
+    padding: 20px;
+    border: 2px #ff6347;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.container h2 {
+    margin-bottom: 16px;
+    color: #ff4500;
+}
+
+.formulaire div {
+    margin-bottom: 12px;
+    text-align: left;
+}
+.formulaire label {
+    font-size: 13px;
+    display: block;
+    margin-bottom: 5px;
+    color: #8b0000;
+}
+.formulaire input[type="email"],
+.formulaire input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 2px #ffa07a;
+    border-radius: 8px;
+    font-size: 13px;
+}
+.mdp-oublie {
+    display: block;
+    margin: 10px 0;
+    font-size: 13px;
+    color: #ff6347;
+    text-decoration: none;
+}
+
+.btn-connexion {
+    width: 100%;
+    background: #ffa07a;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+.btn-connexion:hover {
+    background: #ff4500;
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 95%;
+    }
+}

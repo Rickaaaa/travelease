@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TravelEase - Votre évasion, notre mission</title>
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="compte.css">
+  <link rel="icon" href="/Images/logo.PNG">
+</head>
+<a href="#" id="flèche" title="Revenir en haut">
+    <img src="Images/flèche.png" alt="Retour en haut" />
+  </a>
+<body>
+  <header>
+    <nav>
+        <div class="logo-contenu">
+            <a href="#">
+              <img src="Images/logo.PNG" alt="Logo" />
+            </a>
+          </div>
+          <div id="burger"></div>
+      <ul class="nav-menu">
+        <li><a href="responsive.html">Accueil</a></li>
+        <li><a href="responsive.html">Nos destinations</a></li>
+        <li><a href="responsive.html">Nos services</a></li>
+        <li><a href="responsive.html">Contact</a></li>
+        <li><a href="compte.html">Mon compte</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="compte">
+
+  <section id="compte">
+    <div class="container">
+     <h2>Connexion à votre compte</h2>
+    <form class="formulaire">
+            <div>
+        <label class="idt" for="username">Votre mail :</label>
+        <input placeholder="prenom.nom@gmail.com" type="email" name="username" required />
+     </div>
+        <div>
+        <label for="pass">Mot de passe :</label>
+       <input placeholder="********" type="password" name="password" required />
+         </div>
+
+     <a href="mdp.html" class="mdp-oublie">Mot de passe oublié ?</a>
+
+     <input type="submit" value="Se connecter" class="btn-connexion" />
+  </form>
+</div>
+</section>
+    
+</section>
+</main>
+
+<footer>
+  <p>&copy; 2025 TravelEase. Tous droits réservés.</p>
+</footer>
+
+<script>
+  const burger = document.getElementById('burger');
+  const nav = document.querySelector('.nav-menu'); 
+
+  burger.addEventListener('click', () => {
+      burger.classList.toggle('close');
+      nav.classList.toggle('open'); 
+  });
+</script>
+
+</body>
+</html>
